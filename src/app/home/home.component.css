@@ -1,0 +1,9 @@
+.card {
+    width: 15%;
+    display: inline-block;
+    position: relative;
+}
+.body {
+    height: 800px;
+    width: auto;
+}
