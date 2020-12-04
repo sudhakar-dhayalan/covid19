@@ -10,6 +10,8 @@ import { ReportOverviewComponent } from './report-overview/report-overview.compo
 import { VictimsInsightComponent } from './victims-insight/victims-insight.component';
 import { from } from 'rxjs';
 
+import { AgGridModule } from 'ag-grid-angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]

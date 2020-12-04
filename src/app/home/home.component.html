@@ -2,18 +2,19 @@
     <div>
         <h1>Get well Soon!!!</h1> <br> <br>
         <h3>The outbreak of the coronavirus or the so-called covid-19 makes the earth grief</h3>
-        <img src="covid.png" alt="covid image comes here" width="500" height="600">
+        <img src="../covid.png" alt="covid image comes here">
+        <img src="../../img/firstImage.jpg" alt="covid image comes here">
     </div>
 
     <div>
 
         <div class="card">
             <div class="card-header">
-                Active No. of Cases
+                NewConfirmed
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>{{newConfirmed}}</p>
                     <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
                     </footer> -->
                 </blockquote>
@@ -22,11 +23,11 @@
 
         <div class="card">
             <div class="card-header">
-                Death
+                TotalConfirmed
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>{{totalConfirmed}}</p>
                     <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
                     </footer> -->
                 </blockquote>
@@ -34,11 +35,11 @@
         </div>
         <div class="card">
             <div class="card-header">
-                Recovered
+                NewDeaths
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>{{newDeaths}}</p>
                     <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
                     </footer> -->
                 </blockquote>
@@ -46,13 +47,37 @@
         </div>
         <div class="card">
             <div class="card-header">
-                Newly Infected
+                TotalDeaths
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
-                    <p>{{newConfirmed}}</p>
+                    <p>{{totalDeaths}}</p>
                     <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
                     </footer> -->
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                NewRecovered
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>{{newRecovered}}</p>
+                    <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+                            </footer> -->
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                TotalRecovered
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>{{totalRecovered}}</p>
+                    <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
+                            </footer> -->
                 </blockquote>
             </div>
         </div>
