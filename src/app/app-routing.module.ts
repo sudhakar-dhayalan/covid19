@@ -15,7 +15,13 @@ const routes: Routes = [
       dataFromResolve: DataResolverService
     }
   },
-  { path: 'reportOverview', component: ReportOverviewComponent },
+  { 
+    path: 'reportOverview', 
+    component: ReportOverviewComponent,
+    resolve: {
+      dataFromResolve: DataResolverService
+    } 
+  },
   { path: 'victimsInsight', component: VictimsInsightComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
