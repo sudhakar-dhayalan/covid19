@@ -17,21 +17,6 @@ export class HomeComponent implements OnInit {
   newRecovered: number = 0;
   totalRecovered: number = 0;
 
-  //Using modelService - Without data resolver. Initial loading not getting the data
-  // constructor(public modelService: ModelService) { }
-
-  // ngOnInit(): void {
-  //   if (this.modelService.globalData != {}) {
-  //     this.newConfirmed = this.modelService.globalData.NewConfirmed;
-  //     this.totalConfirmed = this.modelService.globalData.TotalConfirmed;
-  //     this.newDeaths = this.modelService.globalData.NewDeaths;
-  //     this.totalDeaths = this.modelService.globalData.TotalDeaths;
-  //     this.newRecovered = this.modelService.globalData.NewRecovered;
-  //     this.totalRecovered = this.modelService.globalData.TotalRecovered;
-  //   }
-  // }
-
-
   //Using data service - Uses resolver
   constructor(private activatedRoute: ActivatedRoute) { }
 
@@ -46,4 +31,19 @@ export class HomeComponent implements OnInit {
       this.totalRecovered = obj.dataFromResolve.Global.TotalRecovered;
     });
   }
+
+  //Using modelService - Without data resolver. Initial loading not getting the data
+  // constructor(public modelService: ModelService) { }
+
+  // ngOnInit(): void {
+  //   if (this.modelService.globalData != {}) {
+  //     this.newConfirmed = this.modelService.globalData.NewConfirmed;
+  //     this.totalConfirmed = this.modelService.globalData.TotalConfirmed;
+  //     this.newDeaths = this.modelService.globalData.NewDeaths;
+  //     this.totalDeaths = this.modelService.globalData.TotalDeaths;
+  //     this.newRecovered = this.modelService.globalData.NewRecovered;
+  //     this.totalRecovered = this.modelService.globalData.TotalRecovered;
+  //   }
+  // }
+
 }

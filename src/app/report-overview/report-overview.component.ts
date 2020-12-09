@@ -11,37 +11,36 @@ export class ReportOverviewComponent implements OnInit {
 
   columnDefs = [
     { field: 'Country' },
+    { field: 'TotalConfirmed' },
     { field: 'NewConfirmed' },
-    { field: 'NewConfirmed' },
-    { field: 'Total test Deaths' },
-    { field: 'New Deaths' }
+    { field: 'TotalDeaths' },
+    { field: 'NewDeaths' }
   ];
 
-  
+
   rowData: any[] = [
-    {'Country': 'any country', 'NewConfirmed': '2', 'Total Deaths': '2', 'Deaths': '2', 'New Deaths': '2'}
   ];
 
- //Using data service - Uses resolver
- constructor(private activatedRoute: ActivatedRoute) { 
-  this.defaultColDef = {
-    flex: 1,
-    resizable: true
-  };
- }
+  //Using data service - Uses resolver
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.defaultColDef = {
+      flex: 1,
+      resizable: true
+    };
+  }
 
- countries: any[];
- ngOnInit(): void {
-   let tempRowData = [];
-   this.activatedRoute.data.subscribe((obj: { dataFromResolve: any }) => {
-     this.countries = obj.dataFromResolve.Countries;
-   });
+  countries: any[];
+  ngOnInit(): void {
+    let tempRowData = [];
+    this.activatedRoute.data.subscribe((obj: { dataFromResolve: any }) => {
+      this.countries = obj.dataFromResolve.Countries;
+    });
 
-   this.countries.forEach(function (objOfArray:Object) {
-    tempRowData.push(objOfArray);
-   });
+    this.countries.forEach(function (objOfArray: Object) {
+      tempRowData.push(objOfArray);
+    });
 
-   this.rowData = tempRowData;
- }
+    this.rowData = tempRowData;
+  }
 
 }
