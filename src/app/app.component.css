@@ -11,12 +11,16 @@
 /* Navbar */
 .navbar-brand {
     font-size: 2.5rem;
+    padding-left: 5%;
 }
 
 .nav-item {
     font-size: 1.5rem;
+    padding-left: 5rem;
 }
-
+.collapse {
+    padding-right: 5%;
+}
 /* .nav-links {
     padding-left: 53%;
 }
