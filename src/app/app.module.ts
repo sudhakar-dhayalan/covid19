@@ -4,10 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ReportOverviewComponent } from './report-overview/report-overview.component';
-import { VictimsInsightComponent } from './victims-insight/victims-insight.component';
 import { from } from 'rxjs';
 
 import { AgGridModule } from 'ag-grid-angular';
@@ -15,11 +11,7 @@ import { AgGridModule } from 'ag-grid-angular';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     routingComponents,
-    PageNotFoundComponent,
-    ReportOverviewComponent,
-    VictimsInsightComponent
   ],
   imports: [
     BrowserModule,

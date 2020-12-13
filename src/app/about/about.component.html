@@ -1,0 +1,47 @@
+<div>
+    <p>
+        This application is deveoped completly for learning purpose and by any means not responsible for
+        inaccuracy in the covid 19 info. 
+    </p>
+    <h6>
+        API used throughout this app is 
+        <a href="https://api.covid19api.com/summary">https://api.covid19api.com/summary</a>
+    </h6>
+
+    <div class="angular-collapser-container">
+        <h4 class="angular-collapser-header" 
+            [class.expanded]="showAngularBody" 
+            (click)="toggle()">
+            Angular <span class="fa" [ngClass]="{
+                'fa-chevron-up': showAngularBody,
+                'fa-chevron-down': !showAngularBody
+            }"></span>
+        </h4>
+        <p *ngIf="showAngularBody" class="angular-collapser-body">Content inside the collapse </p>
+    </div>
+
+    <div class="angular-collapser-container">
+        <h4 class="angular-collapser-header" 
+            [class.expanded]="showAngularBody" 
+            (click)="toggle()">
+            Angular <span class="fa" [ngClass]="{
+                'fa-chevron-up': showAngularBody,
+                'fa-chevron-down': !showAngularBody
+            }"></span>
+        </h4>
+        <p *ngIf="showAngularBody" class="angular-collapser-body">Content inside the collapse </p>
+    </div>
+
+    <div class="angular-collapser-container">
+        <h4 class="angular-collapser-header" 
+            [class.expanded]="showAngularBody" 
+            (click)="toggle()">
+            Angular <span class="fa" [ngClass]="{
+                'fa-chevron-up': showAngularBody,
+                'fa-chevron-down': !showAngularBody
+            }"></span>
+        </h4>
+        <p *ngIf="showAngularBody" class="angular-collapser-body">Content inside the collapse </p>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+.angular-collapser-container {
+    /* border: lightgray solid 1px;
+    border-radius: 2px; */
+    width: 80%;
+    margin: 1% 1% 0 1%;
+}
+
+.angular-collapser-header {
+    cursor: pointer;
+    padding: 1%;
+    border-bottom: lightgray solid 1px;
+}
+
+.angular-collapser-body {
+    padding: 2%;
+}
+
+.expanded {
+    background-color: lightgray;
+}
+
+.fa {
+    float: right;
+}
