@@ -2,18 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 
 import { AgGridModule } from 'ag-grid-angular';
+import { ReportModule } from './report/report.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    routingComponents,
+    AppComponent
   ],
   imports: [
+    ReportModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
