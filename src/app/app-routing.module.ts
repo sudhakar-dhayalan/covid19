@@ -17,12 +17,19 @@ const routes: Routes = [
       dataFromResolve: DataResolverService
     }
   },
-  { 
-    path: 'reportOverview', 
-    component: ReportOverviewComponent,
+  // { 
+  //   path: 'reportOverview', 
+  //   component: ReportOverviewComponent,
+  //   resolve: {
+  //     dataFromResolve: DataResolverService
+  //   } 
+  // },
+  {
+    path: 'reportOverview',
+    loadChildren: () => import('src/app/report/report.module').then(m => m.ReportModule),
     resolve: {
       dataFromResolve: DataResolverService
-    } 
+    }
   },
   { path: 'victimsInsight', component: VictimsInsightComponent },
   { path: 'about', component: AboutComponent },
