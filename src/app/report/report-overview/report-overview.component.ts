@@ -7,9 +7,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./report-overview.component.css']
 })
 export class ReportOverviewComponent implements OnInit {
-    // ngOnInit() {
-    //   console.log('everything working fine');
-    // }
+  // ngOnInit() {
+  //   console.log('everything working fine');
+  // }
   public defaultColDef: object;
 
   columnDefs = [
