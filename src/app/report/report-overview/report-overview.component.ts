@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./report-overview.component.css']
 })
 export class ReportOverviewComponent implements OnInit {
-  // ngOnInit() {
-  //   console.log('everything working fine');
-  // }
+
+  @Input("tempHolder") data;
+  
   public defaultColDef: object;
 
   columnDefs = [
@@ -20,12 +20,9 @@ export class ReportOverviewComponent implements OnInit {
     { field: 'NewDeaths' }
   ];
 
+  rowData: any[] = [];
 
-  rowData: any[] = [
-  ];
-
-  //Using data service - Uses resolver
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor() {
     this.defaultColDef = {
       flex: 1,
       resizable: true
@@ -34,10 +31,8 @@ export class ReportOverviewComponent implements OnInit {
 
   countries: any[];
   ngOnInit(): void {
+    this.countries = this.data.Countries;
     let tempRowData = [];
-    this.activatedRoute.data.subscribe((obj: { dataFromResolve: any }) => {
-      this.countries = obj.dataFromResolve.Countries;
-    });
 
     this.countries.forEach(function (objOfArray: Object) {
       tempRowData.push(objOfArray);

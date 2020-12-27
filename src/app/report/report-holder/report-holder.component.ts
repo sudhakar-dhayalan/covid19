@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-report-holder',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportHolderComponent implements OnInit {
 
-  constructor() { }
+  tempDataHolder: any;
+  constructor(private activatedRoute: ActivatedRoute) { }
 
+  //Using data service - Uses resolver
   ngOnInit(): void {
+    this.activatedRoute.data.subscribe((obj : { dataFromResolve: any}) => {
+      this.tempDataHolder = obj.dataFromResolve;
+    });
   }
 
 }
