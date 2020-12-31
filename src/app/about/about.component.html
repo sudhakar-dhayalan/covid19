@@ -8,16 +8,16 @@
         <a href="https://api.covid19api.com/summary">https://api.covid19api.com/summary</a>
     </h6>
 
-    <!-- <div class="angular-collapser-container">
+    <div class="angular-collapser-container">
         <div>
-            <h4 class="angular-collapser-header" [class.expanded]="showAngularBody" (click)="toggle('angular')">
-                Angular <span class="fa" [ngClass]="{
-                        'fa-chevron-up': showAngularBody,
-                        'fa-chevron-down': !showAngularBody
-                    }"></span>{{showAngularBody}}
+            <h4 class="angular-collapser-header" [ngClass]="{
+                'glyphicon-chevron-up': showAngularBody,
+                'glyphicon-chevron-down': !showAngularBody
+            }" [class.expanded]="showAngularBody" (click)="toggle('angular')">
+                Angular
             </h4>
         </div>
-        <div *ngIf="showAngularBody" class="angular-collapser-body">
+        <div [hidden]="showAngularBody" class="angular-collapser-body">
             <p>Content inside the collapse</p>
             <p>Content inside the collapse</p>
             <h3>I can put anything here</h3>
@@ -25,11 +25,11 @@
         </div>
     </div>
 
-    <div class="angular-collapser-container">
+    <!-- <div class="angular-collapser-container">
         <h4 class="angular-collapser-header" [class.expanded]="showBootstrapBody" (click)="toggle('bootstrap')">
-            BootStrap <span class="fa" [ngClass]="{
-                'fa-chevron-up': showBootstrapBody,
-                'fa-chevron-down': !showBootstrapBody
+            BootStrap <span [ngClass]="{
+                'glyphicon-chevron-up': showBootstrapBody,
+                'glyphicon-chevron-down': !showBootstrapBody
             }"></span>
         </h4>
         <p *ngIf="showBootstrapBody" class="angular-collapser-body">Content inside the collapse </p>
@@ -37,12 +37,16 @@
 
     <div class="angular-collapser-container">
         <h4 class="angular-collapser-header" [class.expanded]="showDesignBody" (click)="toggle('design')">
-            Design <span class="fa" [ngClass]="{
-                'fa-chevron-up': showDesignBody,
-                'fa-chevron-down': !showDesignBody
+            Design <span [ngClass]="{
+                'glyphicon-chevron-up': showDesignBody,
+                'glyphicon-chevron-down': !showDesignBody
             }"></span>
         </h4>
         <p *ngIf="showDesignBody" class="angular-collapser-body">Content inside the collapse </p>
     </div> -->
 
+    <!-- <div class="angular-collapser-container">
+        <div class="angular-collapser-header" [class.expanded]="showAngularBody" (click)="onClick()">Angular</div>
+        <div *ngIf="showAngularBody" class="angular-collapser-body"><h1>body</h1></div>
+    </div> -->
 </div>

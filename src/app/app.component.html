@@ -11,7 +11,7 @@
         <a routerLink="/home" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/reportOverview" class="nav-link">Report</a>
+        <a routerLink="/report" class="nav-link">Report</a>
       </li>
       <li class="nav-item">
         <a routerLink="/victimsInsight" class="nav-link">Victims Insight</a>
@@ -42,8 +42,10 @@
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<div class="app-body">
+  <router-outlet></router-outlet>
+</div>
 
-<div class="footer">
+<div class="app-footer">
   <h6>All rights reserved @sudhakar</h6>
 </div>

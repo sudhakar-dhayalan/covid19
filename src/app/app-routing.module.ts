@@ -25,7 +25,7 @@ const routes: Routes = [
   //   } 
   // },
   {
-    path: 'reportOverview',
+    path: 'report',
     loadChildren: () => import('src/app/report/report.module').then(m => m.ReportModule),
     resolve: {
       dataFromResolve: DataResolverService

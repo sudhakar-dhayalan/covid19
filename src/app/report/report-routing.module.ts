@@ -1,11 +1,15 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { AboutComponent } from "../about/about.component";
+import { ReportDetailComponent } from "./report-detail/report-detail.component";
 import { ReportHolderComponent } from "./report-holder/report-holder.component";
 
 const reportRoute: Routes = [
-    { path: '', component: ReportHolderComponent },
-    { path: 'reportDetail', component: AboutComponent }
+    {
+        path: '', children: [
+            { path: '', component: ReportHolderComponent },
+            { path: 'detail', component: ReportDetailComponent }
+        ]
+    }
 ];
 
 @NgModule({
