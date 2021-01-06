@@ -10,11 +10,12 @@
 
     <div class="angular-collapser-container">
         <div>
-            <h4 class="angular-collapser-header" [ngClass]="{
-                'glyphicon-chevron-up': showAngularBody,
-                'glyphicon-chevron-down': !showAngularBody
-            }" [class.expanded]="showAngularBody" (click)="toggle('angular')">
+            <h4 class="angular-collapser-header" [class.expanded]="showAngularBody" (click)="toggle('angular')">
                 Angular
+                <!-- <span [ngClass]="{
+                    'glyphicon-chevron-up': showAngularBody,
+                    'glyphicon-chevron-down': !showAngularBody
+                }"></span> -->
             </h4>
         </div>
         <div [hidden]="showAngularBody" class="angular-collapser-body">
