@@ -11,9 +11,9 @@ export class ReportHolderComponent implements OnInit {
   tempDataHolder: any;
   constructor(private activatedRoute: ActivatedRoute) { }
 
-  //Using data service - Uses resolver
+  // Using data service - Uses resolver
   ngOnInit(): void {
-    this.activatedRoute.data.subscribe((obj : { dataFromResolve: any}) => {
+    this.activatedRoute.data.subscribe((obj: { dataFromResolve: any}) => {
       this.tempDataHolder = obj.dataFromResolve;
     });
   }

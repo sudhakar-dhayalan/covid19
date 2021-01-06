@@ -1,7 +1,7 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { ReportDetailComponent } from "./report-detail/report-detail.component";
-import { ReportHolderComponent } from "./report-holder/report-holder.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { ReportDetailComponent } from './report-detail/report-detail.component';
+import { ReportHolderComponent } from './report-holder/report-holder.component';
 
 const reportRoute: Routes = [
     {

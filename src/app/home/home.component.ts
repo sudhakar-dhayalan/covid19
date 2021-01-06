@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ModelService } from '../model.service';
-import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -10,14 +8,14 @@ import { DataService } from '../services/data.service';
 })
 export class HomeComponent implements OnInit {
 
-  newConfirmed: number = 0;
-  totalConfirmed: number = 0;
-  newDeaths: number = 0;
-  totalDeaths: number = 0;
-  newRecovered: number = 0;
-  totalRecovered: number = 0;
+  newConfirmed = 0;
+  totalConfirmed = 0;
+  newDeaths = 0;
+  totalDeaths = 0;
+  newRecovered = 0;
+  totalRecovered = 0;
 
-  //Using data service - Uses resolver
+  // Using data service - Uses resolver
   constructor(private activatedRoute: ActivatedRoute) { }
 
   overviewData: any[];
@@ -32,7 +30,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  //Using modelService - Without data resolver. Initial loading not getting the data
+  // Using modelService - Without data resolver. Initial loading not getting the data
   // constructor(public modelService: ModelService) { }
 
   // ngOnInit(): void {

@@ -8,8 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ReportOverviewComponent implements OnInit {
 
-  @Input("tempHolder") data;
-  
+  @Input('tempHolder') data;
+
   public defaultColDef: object;
 
   columnDefs = [
@@ -32,9 +32,9 @@ export class ReportOverviewComponent implements OnInit {
   countries: any[];
   ngOnInit(): void {
     this.countries = this.data.Countries;
-    let tempRowData = [];
+    const tempRowData = [];
 
-    this.countries.forEach(function (objOfArray: Object) {
+    this.countries.forEach(function(objOfArray: Object) {
       tempRowData.push(objOfArray);
     });
 

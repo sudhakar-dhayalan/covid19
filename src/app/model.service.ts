@@ -18,7 +18,7 @@ export class ModelService {
       this.allCountriesData = value.Countries;
 
       this.countryData.forEach(countryList => {
-        if (countryList.CountryCode == "IN") {
+        if (countryList.CountryCode == 'IN') {
           this.IndiaData = countryList;
           console.log(countryList);
         }

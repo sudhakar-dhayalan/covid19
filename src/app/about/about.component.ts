@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  showAngularBody: boolean = false;
-  showBootstrapBody: boolean = false;
-  showDesignBody: boolean = false;
+  showAngularBody = false;
+  showBootstrapBody = false;
+  showDesignBody = false;
 
   toggle(bodyToBeToggled) {
-    if (bodyToBeToggled == "angular") {
+    if (bodyToBeToggled == 'angular') {
       this.showAngularBody = !this.showAngularBody;
-    } else if (bodyToBeToggled == "bootstrap") {
-      this.showBootstrapBody = !this.showBootstrapBody
+    } else if (bodyToBeToggled == 'bootstrap') {
+      this.showBootstrapBody = !this.showBootstrapBody;
     } else {
       this.showDesignBody = !this.showDesignBody;
     }

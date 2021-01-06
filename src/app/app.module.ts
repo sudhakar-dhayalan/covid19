@@ -7,14 +7,14 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 
 import { AgGridModule } from 'ag-grid-angular';
-//import { ReportModule } from './report/report.module';
+// import { ReportModule } from './report/report.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    //ReportModule,
+    // ReportModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
