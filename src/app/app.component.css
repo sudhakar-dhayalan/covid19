@@ -1,5 +1,6 @@
 .app-body {
-    margin: 5%;
+    margin: 0 4%;
+    padding: 4% 0;
 }
 
 .header {
@@ -8,15 +9,22 @@
 }
 
 .app-footer {
-    height: 2%;
+    height: 4%;
     width: auto;
+    text-align: center;
+    background-color: #f2dcbb;
+    padding: 2rem 0;
 }
 
 /* Navbar */
 
+.navbar { 
+    background-color: #f2dcbb;
+}
+
 .navbar-brand {
     font-size: 2.5rem;
-    padding-left: 5%;
+    padding-left: 3.6%;
 }
 
 .nav-item {

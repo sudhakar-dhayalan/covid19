@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PreventationComponent } from './preventation/preventation.component';
 import { DataResolverService } from './services/data-resolver.service';
 import { VictimsInsightComponent } from './victims-insight/victims-insight.component';
 
@@ -30,6 +31,7 @@ const routes: Routes = [
     }
   },
   { path: 'victimsInsight', component: VictimsInsightComponent },
+  { path: 'preventation', component: PreventationComponent },
   { path: 'about', component: AboutComponent },
   { path: '**', component: PageNotFoundComponent }
 ];

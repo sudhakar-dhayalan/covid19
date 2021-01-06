@@ -31,3 +31,13 @@
 .card-body {
     text-align: center;
 }
+
+.card-row {
+    margin-left: 1px;
+}
+
+.overview {
+    text-align: center;
+    font-size: 4rem;
+    padding: 5% 0 0 0;
+}
