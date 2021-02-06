@@ -8,12 +8,14 @@ import { from } from 'rxjs';
 
 import { AgGridModule } from 'ag-grid-angular';
 import { PreventationComponent } from './preventation/preventation.component';
+import { NavbarComponent } from './navbar/navbar.component';
 // import { ReportModule } from './report/report.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PreventationComponent
+    PreventationComponent,
+    NavbarComponent
   ],
   imports: [
     // ReportModule,
