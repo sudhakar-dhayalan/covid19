@@ -26,9 +26,7 @@ export class ModelService {
 
     });
   }
-
-
-
+  
   getOverviewData() {
     return this.globalData;
   }
